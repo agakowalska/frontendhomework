@@ -1,0 +1,54 @@
+.section1 {
+    height: 100vh;
+    background-image: url(../img/christmas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    color: #DC143C;
+}
+
+.section1 li:first-child,
+.section1 li:last-child {
+    color: #FFFF33;
+}
+
+.section2 {
+    height: 100vh;
+    background-image: url(../img/winter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    color: #8B4513;
+}
+
+.section2 a {
+    text-decoration: none;
+}
+
+.section2 li:hover:nth-child(even) {
+    color: #FF9933;
+}
+
+.section2 li:hover:nth-child(odd) {
+    color: #FFCCCC;
+}
+
+
+.section3 {
+    height: 100vh;
+    background-image: url(../img/tea.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Seaweed Script', cursive;
+    font-size: 120px;
+    color: #DC143C;
+    text-align: center;
+}
