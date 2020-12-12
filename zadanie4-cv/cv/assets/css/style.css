@@ -1,0 +1,475 @@
+/**********************************************************
+* GLOBAL SETTINGS
+**********************************************************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #353353;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 12px 32px;
+    background-color: #ff4c60;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffc107;
+}
+
+header.default {
+    background-image: url("../img/dots.svg");
+    background-repeat: no-repeat;
+    padding: 16px 0 0 11px;
+    margin: 0 0 40px 0;
+}
+
+header.default h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+
+}
+
+/**********************************************************
+* HELLO SECTION
+**********************************************************/
+
+.hello {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hello .avatar {
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 20px 0;
+}
+
+.hello h1 {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.hello h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+.hello .social-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+}
+
+.hello .social-media li {
+    margin-left: 15px;
+}
+
+.hello .social-media li:first-child {
+    margin: 0 0;
+}
+
+.hello .social-media li a {
+    font-size: 30px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.hello .social-media li a:hover {
+    color: #ffc107;
+}
+
+
+.hello .mouse {
+    display: block;
+    height: 26px;
+    width: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.hello .mouse .wheel {
+    position: absolute;
+    background-color: #ffffff;
+    width: 4px;
+    height: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+        top: 30%
+    }
+
+    15% {
+        top: 50%
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 30%;
+    }
+}
+
+/* ANIMACJA 
+ @keyframes bounce {
+    0% {
+        top: 30%
+    } - przy 0% kuleczka jest na wysokości 30%
+
+    15% {
+        top: 50%
+    } - przy 15% jest na wysokości 50%
+
+    50% {
+        top: 50%;
+    } przy 50% jest na wysokości 50% (zatrzymuje się)
+
+    100% {
+        top: 30%;
+    } przy 100% (na końcu) jest na wysokości 30% czyli w punkcie wyjścia
+
+} */
+
+/**********************************************************
+* ABOUT ME SECTION
+**********************************************************/
+
+.about-me {
+    padding: 50px 0;
+}
+
+.about-me .counters {
+    list-style-type: none;
+    margin: 0 -15px;
+    padding: 0;
+    display: flex;
+}
+
+.about-me .counters li {
+    width: 25%;
+    padding: 0 15px;
+    display: flex;
+}
+
+.about-me .counters li i {
+    font-size: 30px;
+    color: #dedeea;
+    flex: 0 0 50px;
+}
+
+.about-me .counters li .details .number {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.about-me .counters li .details p {
+    margin: 0;
+}
+
+.about-me .about-me-box {
+    display: flex;
+    margin: 0 -15px 30px -15px;
+}
+
+.about-me .about-me-box .avatar {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.about-me .about-me-box .data {
+    width: 75%;
+    padding: 0 15px;
+}
+
+.about-me .about-me-box .data .bg {
+    padding: 30px;
+    background-color: #302f4e;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 0 rgba(69, 67, 96, .1);
+    position: relative;
+    display: flex;
+    margin: 0 -15px;
+}
+
+.about-me .data .bg .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 30px 15px 0;
+    border-color: transparent #302f4e transparent transparent;
+    position: absolute;
+    left: -30px;
+}
+
+.about-me .data .bg .description {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-me .data .bg .description p {
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+}
+
+.about-me .data .bg .skills {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-me .skills .skill .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 8px 0;
+}
+
+.about-me .skills .skill .name span:first-of-type {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.about-me .skills .skill .name span:last-of-type {
+    font-size: 14px;
+}
+
+.about-me .skills .skill .progress-bar {
+    height: 7px;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+}
+
+.about-me .skills .skill .progress-bar .bar {
+    height: 7px;
+    border-radius: 15px;
+    background-color: #ffc107;
+}
+
+.about-me .skills .skill {
+    margin: 0 0 15px 0;
+}
+
+/**********************************************************
+* SERVICES SECTION
+**********************************************************/
+
+.services {
+    padding: 50px 0;
+}
+
+.services .boxes {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.services .boxes .box {
+    width: calc(100% / 3);
+    padding: 0 15px;
+}
+
+.services .boxes .box .bg {
+    background: rgb(249, 215, 76);
+    box-shadow: rgba(249, 215, 76, 0.5) 0px 5px 20px 0px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.services .boxes .box .bg:hover {
+    transform: translateY(-10px);
+}
+
+.services .boxes .box .bg img {
+    margin: 0 0 20px 0;
+}
+
+.services .boxes .box .bg .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.services .boxes .box .bg .description {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/**********************************************************
+* NAVBAR SECTION
+**********************************************************/
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6c6ce5;
+    padding: 15px 0;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation .menu li {
+    margin: 0 0 0 20px;
+}
+
+.navigation .menu li:first-child {
+    margin: 0;
+}
+
+.navigation .menu li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.navigation .menu li a:hover {
+    color: #ffc107;
+}
+
+/**********************************************************
+* LATEST POSTS SECTION
+**********************************************************/
+
+.latest-posts {
+    padding: 50px 0;
+}
+
+.latest-posts .posts {
+    display: flex;
+    margin: 0 -15px;
+    padding: 20px 0 0 0;
+}
+
+.latest-posts .posts .post {
+    width: calc(100% / 3);
+    padding: 0 15px;
+}
+
+.latest-posts .posts .post {
+    width: calc(100% / 3);
+    padding: 0 15px;
+}
+
+.latest-posts .posts .post .bg {
+    background: #302f4e;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.latest-posts .posts .post .bg:hover {
+    transform: translateY(-10px);
+}
+
+.latest-posts .posts .post .bg .title {
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+    padding: 0 15px 0 15px;
+}
+
+.latest-posts .posts .post .bg .title:hover {
+    color: #ff4c60;
+}
+
+.latest-posts .posts .post .bg .date {
+    color: #8b88b1;
+    font-size: 14px;
+    padding: 0 15px 20px 15px;
+}
+
+
+.latest-posts .posts .post .bg .img img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    transition: 0.3s;
+}
+
+.latest-posts .posts .post .bg .img img:hover {
+    transform: scale(1.1);
+}
+
+.latest-posts .posts .post .bg .img {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.latest-posts .posts .post .bg .img .category {
+    width: 70px;
+    height: 29px;
+    background-color: #ff4c60;
+    position: absolute;
+    z-index: 100;
+    border-radius: 0 0 15px 15px;
+    left: 20px;
+}
+
+.latest-posts .posts .post .bg .img .category p {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.latest-posts .button {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
